@@ -1,0 +1,302 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #52130f;
+}
+
+/* -header- */
+
+.icon{
+    padding: 0.5rem;
+    width: 9.7rem;
+    height: 9.7rem;
+    opacity: 0.6;
+    transition: all 600ms ease;
+}
+
+.icon:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #80430d;
+
+    animation-name: rainbow;
+    animation-duration:  2s;
+    animation-fill-mode:  ease-in-out;
+    animation-delay:  200ms ;
+    animation-iteration-count:  infinite;
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3rem;   
+}
+  
+.menu_item li a:hover{
+    font-size:2.1rem ;
+    opacity: 1;
+    transition: all 600ms ease;
+}
+
+.menu_item li a{
+    position: relative;
+    opacity: 0.7;
+}
+
+.menu_item a::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0.3rem;
+    top: 0;
+    left: 0;    
+    background-color: #f3f3f3;
+    transition: 600ms;
+}
+.menu_item li a:hover::after{
+    width: 100%;
+}
+
+
+/* -main- */
+
+/* ---.cont_da_vinci--- */
+
+main .cont_da_vinci img{
+    margin:0 3rem 0 3rem ;
+    width:35rem;
+    height:30rem;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+main .cont_da_vinci p{
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: #f3f3f3;
+    text-indent: 1.5rem;
+    text-align: center;
+}
+
+main .cont_da_vinci{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    position: relative;
+    cursor: default;
+    opacity: 0.6;
+}
+
+main .cont_da_vinci::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image:linear-gradient(to right,#bbff0094,#d400ff);
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition:all 0.6s ease
+}
+main .cont_da_vinci:hover::before{
+    width: 100%;
+}
+
+/* ---.cont_feitos_historicos--- */
+
+main .cont_feitos_historicos img{
+    margin:0 2rem 0 4rem ;
+    width:35rem;
+    height:30rem;
+    animation: swing-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+
+main .cont_feitos_historicos h2{
+    margin-top: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+main .cont_feitos_historicos p, a{
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: #f3f3f3;
+    text-indent: 1.5rem;
+    text-align: center;
+}
+main .cont_feitos_historicos:hover{
+    text-shadow: 1px 1px 9px #f3f3f3;
+    transition: all 600ms ease;
+    opacity: 1;
+}
+main .cont_feitos_historicos a:hover{
+    text-shadow: 1px 1px 3px black;
+    transition: all 600ms ease;
+    cursor: pointer;
+    opacity: 0.6;
+}
+main .text_feitos_historicos{
+    margin: 0 0 0 3rem;
+    text-align: center;
+}
+
+main .cont_feitos_historicos{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    position: relative;
+    cursor: default;
+    opacity: 0.6;
+}
+main .cont_feitos_historicos::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image:linear-gradient(to left,#0888ff94,#290000);
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition:all 0.6s ease
+}
+main .cont_feitos_historicos:hover::before{
+    width: 100%;
+}
+
+/* ---.cont_habilidades--- */
+
+main .cont_habilidades img{
+    margin:0 2rem  ;
+    width:40rem;
+    height:34rem;
+}
+main .cont_habilidades h2{
+    margin-top: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+main .cont_habilidades p{
+    font-size: 2.1rem;
+    padding: 1.4rem;
+    color: #f3f3f3;
+    text-indent: 1.5rem;
+    text-align: center;
+}
+main .cont_habilidades:hover{
+    text-shadow: 1px 1px 19px #f3f3f3;
+    transition: all 600ms ease;
+    opacity: 1;
+}
+main .cont_habilidades{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    cursor: default;
+    position: relative;
+    opacity: 0.6;
+}
+main .cont_habilidades::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image:linear-gradient(to right,#41cec7a9,#101601);
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition:all 0.6s ease
+}
+main .cont_habilidades:hover::before{
+    width: 100%;
+}
+
+/* ---.cont_humanos--- */
+
+main .cont_humanos img{
+    margin:0 2rem  ;
+    width:40rem;
+    height:34rem;
+}
+main .cont_humanos h2{
+    margin-top: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #f3f3f3;
+}
+main .cont_humanos p{
+    font-size: 2.1rem;
+    padding: 1.4rem;
+    color: #f3f3f3;
+    text-indent: 1.5rem;
+    text-align: center;
+}
+main .cont_humanos:hover{
+    text-shadow: 1px 1px 19px #f3f3f3;
+    transition: all 600ms ease;
+    opacity: 1;
+}
+main .cont_humanos{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    cursor: default;
+    position: relative;
+    opacity: 0.6;
+}
+main .cont_humanos::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image:linear-gradient(to left,#b80443,#0887ff);
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition:all 0.6s ease
+}
+main .cont_humanos:hover::before{
+    width: 100%;
+}
+
+/* -footer- */
+
+footer{
+    background-color: #171934;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.disponibilidade{
+    padding: 0.3rem;
+    text-align: start;
+}
+.antonio{
+    font-size: 1.7rem;
+}
+.contato{
+    padding: 0.3rem;
+    text-align: end;
+}
